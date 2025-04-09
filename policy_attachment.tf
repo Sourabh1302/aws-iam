@@ -7,10 +7,10 @@ module "new_policy_attachment" {
       policy_arns = [
         "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
       ]
-      policy_names =  [
-        "S3ReadOnlyPolicy", 
-        "S3ReadOnlyPolicyNew", 
-        "TestPolicy1"]
+      policy_names = [
+        "S3ReadOnlyPolicy",
+        "S3ReadOnlyPolicyNew",
+      "TestPolicy1"]
     }
 
 
@@ -20,11 +20,11 @@ module "new_policy_attachment" {
         "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
       ]
       policy_names = [
-        "S3ReadOnlyPolicy", 
-        "S3ReadOnlyPolicyNew",  
-        "EC2DescribePolicy", 
-        "TestPolicy", 
-        "TestPolicy1" ]
+        "S3ReadOnlyPolicy",
+        "S3ReadOnlyPolicyNew",
+        "EC2DescribePolicy",
+        "TestPolicy",
+      "TestPolicy1"]
     }
 
     BUTestRole1 = {
@@ -33,12 +33,12 @@ module "new_policy_attachment" {
         "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
       ]
       policy_names = [
-      "S3ReadOnlyPolicy",
-       "S3ReadOnlyPolicyNew",  
-       "EC2DescribePolicy", 
-       "TestPolicy", 
-       "TestPolicy1", 
-       "TestPolicy2" ]
+        "S3ReadOnlyPolicy",
+        "S3ReadOnlyPolicyNew",
+        "EC2DescribePolicy",
+        "TestPolicy",
+        "TestPolicy1",
+      "TestPolicy2"]
     }
 
   }

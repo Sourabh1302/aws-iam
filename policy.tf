@@ -46,7 +46,7 @@ module "new_policy" {
       }]
     }
 
-        "DynamoDBDescribePolicy" = {
+    "DynamoDBDescribePolicy" = {
       name = "DynamoDBDescribePolicy"
       path = "/"
       statements = [{
@@ -60,20 +60,20 @@ module "new_policy" {
       name = "TestPolicy"
       path = "/"
       statements = [{
-        effect    = "Allow"
-        actions   = ["dynamodb:Describe*",
-                      "ec2:Describe*"]
+        effect = "Allow"
+        actions = ["dynamodb:Describe*",
+        "ec2:Describe*"]
         resources = ["*"]
       }]
-    }    
+    }
 
     "TestPolicy1" = {
       name = "TestPolicy1"
       path = "/"
       statements = [{
-        effect    = "Allow"
-        actions   = ["dynamodb:Describe*",
-                      "ec2:Describe*"]
+        effect = "Allow"
+        actions = ["dynamodb:Describe*",
+        "ec2:Describe*"]
         resources = ["*"]
       }]
     }
@@ -82,9 +82,9 @@ module "new_policy" {
       name = "TestPolicy2"
       path = "/"
       statements = [{
-        effect    = "Allow"
-        actions   = ["dynamodb:Describe*",
-                      "ec2:Describe*"]
+        effect = "Allow"
+        actions = ["dynamodb:Describe*",
+        "ec2:Describe*"]
         resources = ["*"]
       }]
     }

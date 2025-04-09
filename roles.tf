@@ -54,5 +54,18 @@ module "new_roles" {
         values   = ["Sourabh"]
       }]
     }
+
+    "RoleForTesting" = {
+      name = "RoleForTesting"
+      path = "/"
+
+      principals = ["arn:aws:iam::339712960538:user/Sourabh"]
+
+      conditions = [{
+        test     = "StringEquals"
+        variable = "aws:username"
+        values   = ["Sourabh"]
+      }]
+    }
   }
 }
